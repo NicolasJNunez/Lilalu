@@ -1,0 +1,25 @@
+$tipo-marca: 'Sigmar', cursive;
+$tipo-titulo: 'Lilita One', cursive;
+$tipo-texto: 'Plus Jakarta Sans', sans-serif;
+
+@mixin sombreado-caja {
+  box-shadow: #000 0 0 10px 0;
+}
+
+@mixin w754 {
+  @media (min-width: 754px) {
+    @content;
+  }
+}
+
+@mixin w1200 {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin w1700 {
+  @media (min-width: 1700px) {
+    @content;
+  }
+}
