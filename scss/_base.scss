@@ -2,8 +2,20 @@ $tipo-marca: 'Sigmar', cursive;
 $tipo-titulo: 'Lilita One', cursive;
 $tipo-texto: 'Plus Jakarta Sans', sans-serif;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @mixin sombreado-caja {
   box-shadow: #000 0 0 10px 0;
+}
+
+@mixin w370 {
+  @media (min-width: 370px) {
+    @content;
+  }
 }
 
 @mixin w754 {
@@ -12,14 +24,52 @@ $tipo-texto: 'Plus Jakarta Sans', sans-serif;
   }
 }
 
-@mixin w1200 {
-  @media (min-width: 1200px) {
+@mixin w1320 {
+  @media (min-width: 1320px) {
     @content;
   }
 }
 
-@mixin w1700 {
-  @media (min-width: 1700px) {
+// ---------------------------Max width media----------------------
+
+@mixin maxw1400 {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin maxw1200 {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin maxw992 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin maxw800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin maxw768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin maxw600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin maxw450 {
+  @media (max-width: 450px) {
     @content;
   }
 }

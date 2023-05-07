@@ -1,6 +1,7 @@
 header {
   background-color: hsl(180, 47%, 93%);
-  @include sombreado-caja ();
+  position: relative;
+  z-index: 1;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   &__marca {
     font-family: $tipo-marca;
     text-shadow: #000 2px 2px 2px;
+    margin: 0;
     &--li {
       color: hsl(180, 47%, 64%);
     }
@@ -21,6 +23,29 @@ body {
     }
     &--lu {
       color: rgb(202, 202, 202);
+    }
+  }
+  &__tel {
+    color: #00000080;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: .4em;
+    border: 1px solid;
+    border-radius: 20px;
+    @include maxw800 () {
+      font-size: 0.8rem;
+    }
+    @include maxw600 () {
+      font-size: 0.6rem;
+      right: 10px;
+    }
+    @include maxw450 () {
+      font-size: 0.5rem;
+      right: 10px;
     }
   }
 }
@@ -36,6 +61,7 @@ body {
   }
   & > h2 {
     color: #9e9e9e;
+    text-shadow: #00000086 0.5px 0.5px 0.5px;
   }
   &__cont-about-us-titulo {
     display: flex;
@@ -48,27 +74,120 @@ body {
     padding: .2em;
     border-radius: 7.5px;
   }
-}
-
-.cont-carousel {
-  @include w1200 () {
-    width: 1000px;
-    margin: auto
+  &__cont-cont-caption {
+    display: flex;
+    justify-content: center;
   }
-  @include w1700 () {
-    width: 1320px;
-    margin: auto
+  &__cont-caption {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: rgb(0, 0, 0, 0.5) 0 0 10px 0;
+    padding-top: .8em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 30px;
+    width: fit-content;
+  }
+  &__caption {
+    text-shadow: #000 0 0 5px;
+    @include w370 () {
+      font-size: 1rem;
+    }
+    @include w754 () {
+      font-size: 1.6rem;
+    }
+  }
+  &__pie {
+    text-shadow: #000 0 0 2px;
+    @include w370 () {
+      font-size: 0.7rem;
+    }
+    @include w754 () {
+      font-size: 1rem;
+    }
   }
 }
 
 .carousel {
-  @include sombreado-caja ();
-  margin-bottom: 75px;
+  margin-bottom: 60px;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0);
 }
 
 .galeria {
   &__img {
+    padding: 0;
+    margin: 0 20px;
+    width: 410px;
     height: 300px;
     object-fit: cover;
+    border: solid 10px white;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0,.3));
+    cursor: pointer;
+    transition: 0.3s ease;
+    @include maxw1400 () {
+      height: 500px;
+      width: 500px;
+    }
+    @include maxw1200 () {
+      height: 400px;
+      width: 400px;
+    }
+    @include maxw992 () {
+      height: 300px;
+      width: 300px;
+    }
+    @include maxw768 () {
+      height: 450px;
+      width: 450px;
+    }
+    @include maxw600 () {
+      height: 375px;
+      width: 375px;
+    }
+    @include maxw450 () {
+      height: 350px;
+      width: 350px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__img-larga {
+    padding: 0;
+    margin: 0 20px;
+    height: 500px;
+    width: 410px;
+    object-fit: cover;
+    border: solid 10px white;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0,.3));
+    cursor: pointer;
+    transition: 0.3s ease;
+    @include maxw1400 () {
+      width: 500px;
+    }
+    @include maxw1200 () {
+      height: 400px;
+      width: 400px;
+    }
+    @include maxw992 () {
+      height: 300px;
+      width: 300px;
+    }
+    @include maxw768 () {
+      height: 450px;
+      width: 450px;
+    }
+    @include maxw600 () {
+      height: 375px;
+      width: 375px;
+    }
+    @include maxw450 () {
+      height: 350px;
+      width: 350px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sigmar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
@@ -16,26 +18,68 @@
 
 <body>
   <header>
-    <h1 class="text-center p-4 mb-5 header__marca display-1"><span class="header__marca--li">Li</span><span
+    <h1 class="text-center p-4 header__marca display-1"><span class="header__marca--li">Li</span><span
         class="header__marca--la">La</span><span class="header__marca--lu">Lu</span></h1>
+      <span class="header__tel"><i class="bi bi-telephone-fill"></i><span class="fw-bold">11 6472-8257</span></span>
   </header>
 
   <main>
     <section class="portada">
-      <h2 class="fs-3 text-center fst-italic fw-lighter mb-5 pe-3 ps-3">"Hecho con amor para ese momento especial que vas a compartir..."</h2>
       <div class="cont-carousel">
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./img/fibro-fuente-carro.jpeg" class="d-block w-100 portada__img" alt="Decorado de fiesta con temática de Bob Esponja">
+              <img src="./img/fibro-fuente-carro.jpeg" class="d-block w-100 portada__img" alt="Fuente mesa y carro hecho con fibrofacil">
+              <div class="carousel-caption d-block">
+                <div class="portada__cont-cont-caption">
+                  <div class="portada__cont-caption">
+                    <h3 class="portada__caption">Tus ideas cobran forma</h3>
+                    <p class="portada__pie">Descubrí el poder expresivo del fibrofácil en cada figura</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="./img/lamparas-pintadas-angulo.jpeg" class="d-block w-100 portada__img"
+              <img src="./img/lamparas-pintadas.jpeg" class="d-block w-100 portada__img"
                 alt="Lampara trabajada con fibrofacil de Minnie pintado de rosa">
+                <div class="carousel-caption d-block">
+                  <div class="portada__cont-cont-caption">
+                    <div class="portada__cont-caption">
+                      <h3 class="portada__caption">Diseños a medida</h3>
+                      <p class="portada__pie">Hacemos realidad lo que la gente nos pide con pasión y dedicación</p>
+                    </div>
+                  </div>
+                </div>
             </div>
             <div class="carousel-item">
               <img src="./img/cuadros-celeste.jpeg" class="d-block w-100 portada__img"
                 alt="Marcos de foto de color hechos con fibrofacil">
+                <div class="carousel-caption d-block">
+                  <div class="portada__cont-cont-caption">
+                    <div class="portada__cont-caption">
+                      <h3 class="portada__caption">Tu visión, nuestra misión</h3>
+                      <p class="portada__pie">Nos adaptamos a tus deseos para crear piezas únicas y personalizadas</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/set-fiesta.jpeg" class="d-block w-100 portada__img"
+                alt="Decoración para una fiesta con torta y globos">
+                <div class="carousel-caption d-block">
+                  <div class="portada__cont-cont-caption">
+                    <div class="portada__cont-caption">
+                      <h3 class="portada__caption">Tu fiesta, única y especial</h3>
+                      <p class="portada__pie">Transformamos espacios en escenarios mágicos</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -48,14 +92,15 @@
           </button>
         </div>
       </div>
+      <h2 class="fs-3 text-center fst-italic fw-lighter mb-5 pe-3 ps-3">"Hecho con amor para ese momento especial que vas a compartir..."</h2>
       <div class="container mt-5">
         <article class="row">
           <div class="portada__cont-about-us-titulo mb-3">
             <h2 class="portada__about-us-titulo display-6"><span class="quienes">¿Quienes</span> <span class="somos">somos?</span></h2>
           </div>
-          <p class="text-center pt-3">¡Bienvenidos a Lilalu! Somos un emprendimiento especializado en trabajar con <strong>fibrofácil</strong> y ofrecer servicios de <strong>Candybar</strong>. Trabajamos con diferentes espesores de fibrofácil, desde 3mm hasta 18mm, utilizando cortes láser de hasta 60x60cm y cortes en fresadora de hasta 1m.50 x 1m.50.
+          <p class="text-center pt-3">¡Bienvenidos a LiLaLu! Somos un emprendimiento especializado en trabajar con <strong>fibrofácil</strong> y ofrecer servicios de <strong>Candybar</strong>. Trabajamos con diferentes espesores, desde 3mm hasta 18mm, utilizando cortes láser de hasta 60x60cm y cortes en fresadora de hasta 1m.50 x 1m.50.
             
-            Además, ofrecemos servicios de impresión en <strong>papel fotográfico</strong> y <strong>stikers</strong>, así como la creación de <strong>banners</strong> en tamaños que van desde 60 cm hasta 2 metros. También somos expertos en la fabricación de productos en <strong>porcelana fría</strong>.
+            Además, ofrecemos servicios de impresión en <strong>papel fotográfico</strong> y <strong>stickers</strong>, así como la creación de <strong>banners</strong> en tamaños que van desde 60 cm hasta 2 metros. También somos expertos en la fabricación de productos en <strong>porcelana fría</strong>.
             
             En Lilalu, nos apasiona emular diseños que nuestros clientes encuentran en Internet utilizando fibrofácil. Hacemos realidad tus ideas, ya sea para decoraciones de eventos o regalos originales.</p>
         </article>
@@ -63,24 +108,88 @@
           <div class="col-12 portada__cont-about-us-titulo mt-5 mb-5">
             <h2 class="portada__about-us-titulo display-6"><span class="quienes">Un poco sobre</span> <span class="somos">lo que hacemos:</span></h2>
           </div>
-            <img class="col-4 galeria__img" src="./img/jarros-decorados.jpeg" alt="Frascos con decoración para eventos">
-            <img class="col-4 galeria__img" src="./img/torre-eiffel.jpeg" alt="Decoración de cumpleaños con forma de Torre Eiffel">
-            <img class="col-4 galeria__img mb-5" src="./img/lamparas-dos.jpeg" alt="Lamparas hechas con fibrofacil a medida">
-            <img class="col-4 galeria__img" src="./img/jarros-decorados.jpeg" alt="Frascos con decoración para eventos">
-            <img class="col-4 galeria__img" src="./img/torre-eiffel.jpeg" alt="Decoración de cumpleaños con forma de Torre Eiffel">
-            <img class="col-4 galeria__img mb-5" src="./img/lamparas-dos.jpeg" alt="Lamparas hechas con fibrofacil a medida">
-            <img class="col-4 galeria__img" src="./img/jarros-decorados.jpeg" alt="Frascos con decoración para eventos">
-            <img class="col-4 galeria__img" src="./img/torre-eiffel.jpeg" alt="Decoración de cumpleaños con forma de Torre Eiffel">
-            <img class="col-4 galeria__img" src="./img/lamparas-dos.jpeg" alt="Lamparas hechas con fibrofacil a medida">
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/jarros-decorados.jpeg" data-lightbox="fibro" data-title="Arte en vidrio">
+            <img class="galeria__img mb-5" src="./img/jarros-decorados.jpeg" alt="Frascos con decoración para eventos">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/lamparas-dos.jpeg" data-lightbox="fibro" data-title="Luz esculpida">
+            <img class="galeria__img mb-5" src="./img/lamparas-dos.jpeg" alt="Lamparas hechas con fibrofacil a medida">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/torre-eiffel.jpeg" data-lightbox="fibro" data-title="Encanto parisino">
+            <img class="galeria__img mb-5" src="./img/torre-eiffel.jpeg" alt="Decoración de cumpleaños con forma de Torre Eiffel">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/cuadro-rosa.jpeg" data-lightbox="fibro" data-title="Encuadrá tus recuerdos">
+            <img class="galeria__img-larga mb-5" src="./img/cuadro-rosa.jpeg" alt="Marco de foto rosa hecho artesanalmente">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/frascos-faro.jpeg" data-lightbox="fibro" data-title="Brillo artesanal">
+            <img class="galeria__img-larga mb-5" src="./img/frascos-faro.jpeg" alt="Decoracion de faro hecha con fibrofácil y frascos para cumpleaños">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/cuadro-rojo.jpeg" data-lightbox="fibro" data-title="Encuadrá tus recuerdos">
+            <img class="galeria__img-larga mb-5" src="./img/cuadro-rojo.jpeg" alt="Marco de foto naranja hecho artesanalmente">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/set-bob.jpeg" data-lightbox="fibro" data-title="Absorbente diversión">
+            <img class="galeria__img mb-5" src="./img/set-bob.jpeg" alt="Decoración para un cumpleaños de Bob Esponja">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/cuadros-payasos-zoom.jpeg" data-lightbox="fibro" data-title="Risas enmarcadas">
+            <img class="galeria__img mb-5" src="./img/cuadros-payasos-zoom.jpeg" alt="Marco de foto con decorado de payaseo hecho artesanalmente">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/lamparas-stand.jpeg" data-lightbox="fibro" data-title="Iluminación artesanal">
+            <img class="galeria__img mb-5" src="./img/lamparas-stand.jpeg" alt="Lamparas hechas con fibrofacil">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/lamparas-pintadas-angulo.jpeg" data-lightbox="fibro" data-title="Brillo de Minnie">
+            <img class="galeria__img mb-5" src="./img/lamparas-pintadas-angulo.jpeg" alt="lamparas hechas con fibrofacil de Minnie rosas">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/fibro-cenicienta.jpeg" data-lightbox="fibro" data-title="Encanto de Cenicienta">
+            <img class="galeria__img mb-5" src="./img/fibro-cenicienta.jpeg" alt="Marco de cenicienta hecho con fibrofacil">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/fibro-15.jpeg" data-lightbox="fibro" data-title="Fiesta de quince">
+            <img class="galeria__img mb-5" src="./img/fibro-15.jpeg" alt="Decoracion para cumpleaños de 15 hecho con fibrofacil">
+          </a>
+          <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/fibro-decorado-grande.jpeg" data-lightbox="fibro" data-title="Magia de cumpleaños">
+            <img class="galeria__img-larga mb-5" src="./img/fibro-decorado-grande.jpeg" alt="Decoración hecha con fibrofacil para cumpleaños">
+          </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/decorado-bob.jpeg" data-lightbox="fibro" data-title="Pegatinas divertidas">
+              <img class="galeria__img-larga mb-5" src="./img/decorado-bob.jpeg" alt="Stickers de Bob Esponja">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/fibro-decorado-grande-pintado.jpeg" data-lightbox="fibro" data-title="Magia de cumpleaños terminada">
+              <img class="galeria__img-larga mb-5" src="./img/fibro-decorado-grande-pintado.jpeg" alt="Decoración pintada hecha con fibrofacil para cumpleaños">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/chapita-perro.jpeg" data-lightbox="fibro" data-title="Elegancia canina">
+              <img class="galeria__img mb-5" src="./img/chapita-perro.jpeg" alt="Chapita para perro hecha artesanalmente">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/letras-para-torta-cumple.jpeg" data-lightbox="fibro" data-title="Detalles artesanales">
+              <img class="galeria__img mb-5" src="./img/letras-para-torta-cumple.jpeg" alt="Letras de decorado para una torta">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/torta.jpeg" data-lightbox="fibro" data-title="Dulce innovación">
+              <img class="galeria__img mb-5" src="./img/torta.jpeg" alt="Torta decorada artesanalmente">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/decorado-cumple-perro.jpeg" data-lightbox="fibro" data-title="Fiesta de perros">
+              <img class="galeria__img mb-5" src="./img/decorado-cumple-perro.jpeg" alt="Decorado para cumpleaños de perro">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/decorado-cumple-perros.jpeg" data-lightbox="fibro" data-title="Reunión canina">
+              <img class="galeria__img mb-5" src="./img/decorado-cumple-perros.jpeg" alt="Decorado para cumpleaños de perros">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/souvenir.jpeg" data-lightbox="fibro" data-title="Souvenir original">
+              <img class="galeria__img mb-5" src="./img/souvenir.jpeg" alt="Manualidad hecha con fibrofacil con decorado de perro">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/alcecito.jpeg" data-lightbox="fibro" data-title="Belleza en miniatura">
+              <img class="galeria__img-larga mb-5" src="./img/alcecito.jpeg" alt="Alce en miniatura hecho con fibrofácil">
+            </a cl>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/animalitos-varios.jpeg" data-lightbox="fibro" data-title="Animalitos artísticos">
+              <img class="galeria__img-larga mb-5" src="./img/animalitos-varios.jpeg" alt="Conjunto de animales en miniatura hechos con fibrofácil">
+            </a>
+            <a class="col-sm-12 col-md-6 col-xxl-4 d-flex justify-content-center" href="./img/zorrito.jpeg" data-lightbox="fibro" data-title="Pequeña belleza única">
+              <img class="galeria__img-larga mb-5" src="./img/zorrito.jpeg" alt="Zorro en miniatura hecho con fibrofácil">
+            </a>
         </article>
       </div>
     </section>
   </main>
-
-
+  
+  <a href="https://api.whatsapp.com/send?phone=5491164728257" class="btn-wsp" target="_blank"><i class="bi bi-whatsapp"></i></a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
