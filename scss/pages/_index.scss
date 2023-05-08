@@ -32,14 +32,14 @@ body {
     }
   }
   &__tel {
-    color: #000000a2;
+    color: hsl(180, 47%, 34%);
     display: flex;
     align-items: baseline;
     gap: 5px;
     position: absolute;
     top: 10px;
     right: 20px;
-    padding: .5em;
+    padding: .6em;
     border: 1px solid;
     border-radius: 20px;
     @include maxw800 () {
