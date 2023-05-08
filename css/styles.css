@@ -68,14 +68,14 @@ body {
   color: rgb(202, 202, 202);
 }
 .header__tel {
-  color: rgba(0, 0, 0, 0.5019607843);
+  color: rgba(0, 0, 0, 0.6352941176);
   display: flex;
   align-items: baseline;
   gap: 5px;
   position: absolute;
   top: 10px;
   right: 20px;
-  padding: 0.4em;
+  padding: 0.5em;
   border: 1px solid;
   border-radius: 20px;
 }
@@ -332,10 +332,10 @@ footer {
 }
 
 .footer__tel {
-  color: rgba(0, 0, 0, 0.5019607843);
+  color: rgba(0, 0, 0, 0.6352941176);
   display: flex;
   align-items: baseline;
-  gap: 5px;
+  gap: 2.5px;
   position: relative;
   z-index: 200;
   width: fit-content;

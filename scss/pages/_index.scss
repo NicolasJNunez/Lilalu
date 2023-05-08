@@ -32,14 +32,14 @@ body {
     }
   }
   &__tel {
-    color: #00000080;
+    color: #000000a2;
     display: flex;
     align-items: baseline;
     gap: 5px;
     position: absolute;
     top: 10px;
     right: 20px;
-    padding: .4em;
+    padding: .5em;
     border: 1px solid;
     border-radius: 20px;
     @include maxw800 () {
@@ -247,10 +247,10 @@ footer {
 }
 
 .footer__tel {
-  color: #00000080;
+  color: #000000a2;
     display: flex;
     align-items: baseline;
-    gap: 5px;
+    gap: 2.5px;
     position: relative;
     z-index: 200;
     width: fit-content;
