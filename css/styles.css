@@ -47,9 +47,15 @@ body {
   background-size: 100% 1.5em;
 }
 
+.cont-header-marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__marca {
   font-family: "Sigmar", cursive;
-  text-shadow: #000 2px 2px 2px;
+  text-shadow: #bb90a5 2px 2px 2px;
   margin: 0;
 }
 .header__marca--li {
@@ -88,6 +94,35 @@ body {
   .header__tel {
     font-size: 0.5rem;
     right: 10px;
+  }
+}
+
+.lolipop {
+  width: 80px;
+  filter: drop-shadow(#bb90a5 2px 2px 2px);
+}
+@media (max-width: 1200px) {
+  .lolipop {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media (max-width: 992px) {
+  .lolipop {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .lolipop {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .lolipop {
+    height: 40px;
+    width: 40px;
   }
 }
 

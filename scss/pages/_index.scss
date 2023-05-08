@@ -10,10 +10,16 @@ body {
   background-size: 100% 1.5em ;
 }
 
+.cont-header-marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   &__marca {
     font-family: $tipo-marca;
-    text-shadow: #000 2px 2px 2px;
+    text-shadow: #bb90a5 2px 2px 2px;
     margin: 0;
     &--li {
       color: hsl(180, 47%, 64%);
@@ -47,6 +53,27 @@ body {
       font-size: 0.5rem;
       right: 10px;
     }
+  }
+}
+
+.lolipop {
+  width: 80px;
+  filter: drop-shadow(#bb90a5 2px 2px 2px);
+  @include maxw1200 () {
+    height: 70px;
+    width: 70px;
+  }
+  @include maxw992 () {
+    height: 60px;
+    width: 60px;
+  }
+  @include maxw600 () {
+    height: 50px;
+    width: 50px;
+  }
+  @include maxw450 () {
+    height: 40px;
+    width: 40px;
   }
 }
 
