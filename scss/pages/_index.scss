@@ -254,13 +254,14 @@ footer {
 
 .footer__tel {
   color: #000000a2;
+    font-size: 1.2rem;
     display: flex;
     align-items: baseline;
     gap: 2.5px;
     position: relative;
     z-index: 200;
     width: fit-content;
-    bottom: 5px;
+    bottom: 10px;
     left: 20px;
     @include maxw800 () {
       font-size: 0.8rem;

@@ -339,13 +339,14 @@ footer {
 
 .footer__tel {
   color: rgba(0, 0, 0, 0.6352941176);
+  font-size: 1.2rem;
   display: flex;
   align-items: baseline;
   gap: 2.5px;
   position: relative;
   z-index: 200;
   width: fit-content;
-  bottom: 5px;
+  bottom: 10px;
   left: 20px;
 }
 @media (max-width: 800px) {
