@@ -224,6 +224,15 @@ body {
 footer {
   background-color: rgb(238, 229, 245);
   height: 150px;
+  @include maxw992 () {
+    height: 130px
+  }
+  @include maxw768 () {
+    height: 120px
+  }
+  @include maxw600 () {
+    height: 100px;
+  }
 }
 
 .mensaje-pie {
@@ -252,8 +261,12 @@ footer {
     }
     @include maxw600 () {
       font-size: 0.6rem;
+      left: 10px;
     }
     @include maxw450 () {
       font-size: 0.5rem;
-  }
+    }
+    @include maxw395 () {
+      font-size: 0.45rem;
+}
 }

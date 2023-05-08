@@ -304,6 +304,21 @@ footer {
   background-color: rgb(238, 229, 245);
   height: 150px;
 }
+@media (max-width: 992px) {
+  footer {
+    height: 130px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    height: 100px;
+  }
+}
 
 .mensaje-pie {
   color: #9e9e9e;
@@ -335,11 +350,17 @@ footer {
 @media (max-width: 600px) {
   .footer__tel {
     font-size: 0.6rem;
+    left: 10px;
   }
 }
 @media (max-width: 450px) {
   .footer__tel {
     font-size: 0.5rem;
+  }
+}
+@media (max-width: 395px) {
+  .footer__tel {
+    font-size: 0.45rem;
   }
 }
 
