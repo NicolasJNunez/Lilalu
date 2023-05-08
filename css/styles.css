@@ -337,7 +337,7 @@ footer {
 
 .footer__tel {
   color: hsl(180, 47%, 56%);
-  text-shadow: 0 1px 0 hsl(180, 47%, 53%), 0 2px 0 hsl(180, 47%, 50%), 0 3px 0 hsl(180, 47%, 47%), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Rampart One", cursive;
   font-size: 1.2rem;
   display: flex;
   align-items: baseline;
