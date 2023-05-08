@@ -98,9 +98,9 @@ body {
 }
 
 #demotext {
-  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, 2px 2px 2px rgba(206, 89, 55, 0);
-  color: #78cece;
-  background: rgba(221, 176, 221, 0.6156862745);
+  text-shadow: -1px 2px 1px rgba(115, 114, 114, 0.3882352941), 0px 0px 0px rgba(206, 89, 55, 0);
+  color: #78CECE;
+  background: #EEE5F5;
 }
 
 .lolipop {
@@ -307,7 +307,7 @@ body {
 }
 
 footer {
-  background-color: rgb(238, 229, 245);
+  background-color: #eee5f5;
   height: 150px;
 }
 @media (max-width: 992px) {
@@ -368,6 +368,12 @@ footer {
   .footer__tel {
     font-size: 0.45rem;
   }
+}
+
+#demotext2 {
+  text-shadow: -1px 2px 1px rgba(115, 114, 114, 0.3882352941), 0px 0px 0px rgba(206, 89, 55, 0);
+  color: #78CECE;
+  background: #EEE5F5;
 }
 
 /*# sourceMappingURL=styles.css.map */
