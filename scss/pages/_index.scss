@@ -36,8 +36,8 @@ body {
     font-family: 'Rampart One', cursive;
     font-size: 1.3rem;
     display: flex;
-    align-items: baseline;
-    gap: 5px;
+    align-items: center;
+    gap: 2px;
     position: absolute;
     top: 10px;
     right: 20px;
@@ -255,7 +255,7 @@ footer {
     font-family: 'Rampart One', cursive;
     font-size: 1.2rem;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 2.5px;
     position: relative;
     z-index: 200;
