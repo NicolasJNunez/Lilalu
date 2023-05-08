@@ -12,6 +12,12 @@ $tipo-texto: 'Plus Jakarta Sans', sans-serif;
   box-shadow: #000 0 0 10px 0;
 }
 
+@mixin w320 {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
 @mixin w370 {
   @media (min-width: 370px) {
     @content;
