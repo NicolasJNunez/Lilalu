@@ -79,3 +79,17 @@ $tipo-texto: 'Plus Jakarta Sans', sans-serif;
     @content;
   }
 }
+
+// --------------Medias Height ---------------------
+
+@mixin maxh900 {
+  @media (max-height: 900px) {
+    @content;
+  }
+}
+
+@mixin maxh600 {
+  @media (max-height: 600px) {
+    @content;
+  }
+}

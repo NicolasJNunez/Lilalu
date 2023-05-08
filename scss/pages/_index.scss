@@ -80,10 +80,13 @@ body {
 .portada {
   font-family: $tipo-texto;
   &__img {
-    height: 400px;
+    height: 700px;
     object-fit: cover;
-    @include w754 () {
-      height: 700px;
+    @include maxh900 () {
+      height: 500px;
+    }
+    @include maxh600 () {
+      height: 300px;
     }
   }
   &__parrafo {
@@ -165,24 +168,8 @@ body {
       width: 500px;
     }
     @include maxw1200 () {
-      height: 400px;
-      width: 400px;
-    }
-    @include maxw992 () {
       height: 300px;
       width: 300px;
-    }
-    @include maxw768 () {
-      height: 450px;
-      width: 450px;
-    }
-    @include maxw600 () {
-      height: 375px;
-      width: 375px;
-    }
-    @include maxw450 () {
-      height: 350px;
-      width: 350px;
     }
     &:hover {
       transform: scale(1.1);
@@ -202,24 +189,8 @@ body {
       width: 500px;
     }
     @include maxw1200 () {
-      height: 400px;
-      width: 400px;
-    }
-    @include maxw992 () {
       height: 300px;
       width: 300px;
-    }
-    @include maxw768 () {
-      height: 450px;
-      width: 450px;
-    }
-    @include maxw600 () {
-      height: 375px;
-      width: 375px;
-    }
-    @include maxw450 () {
-      height: 350px;
-      width: 350px;
     }
     &:hover {
       transform: scale(1.1);
