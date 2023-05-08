@@ -251,7 +251,7 @@ footer {
 }
 
 .footer__tel {
-    color: hsl(180, 47%, 56%);
+    color: hsl(180, 47%, 46%);
     font-family: 'Rampart One', cursive;
     font-size: 1.2rem;
     display: flex;
@@ -263,16 +263,16 @@ footer {
     bottom: 10px;
     left: 20px;
     @include maxw800 () {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     @include maxw600 () {
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       left: 10px;
     }
     @include maxw450 () {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
     @include maxw395 () {
-      font-size: 0.45rem;
+      font-size: 0.55rem;
 }
 }
