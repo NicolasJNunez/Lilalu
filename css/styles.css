@@ -94,7 +94,7 @@ body {
 }
 @media (max-width: 600px) {
   .header__tel {
-    top: 3px;
+    top: 5px;
     font-size: 0.9rem;
     right: 5px;
   }
