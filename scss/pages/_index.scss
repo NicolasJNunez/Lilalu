@@ -254,6 +254,46 @@ footer {
   text-shadow: #00000086 0.5px 0.5px 0.5px;
 }
 
+.cont-volver-arriba {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+}
+
+.volver-arriba {
+  font-family: $tipo-texto;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: hsl(180, 47%, 50%);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px #000;
+  box-shadow: 6px 6px 0px hsl(180, 47%, 40%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.link-volver {
+  text-decoration: none;
+  color: #fff;
+}
+
+.volver-arriba:hover {
+  background-color: hsl(180, 47%, 45%);
+  box-shadow: 4px 4px 0px hsl(180, 47%, 35%);
+  transform: translate(2px, 2px);
+}
+
+.volver-arriba:active {
+  background-color: hsl(180, 47%, 40%);
+  box-shadow: 0px 0px 0px hsl(180, 47%, 30%);
+  transform: translate(6px, 6px);
+}
+
 .cont-logo-footer {
   display: flex;
   justify-content: center;
