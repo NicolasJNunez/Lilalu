@@ -10,10 +10,20 @@ body {
   background-size: 100% 1.5em ;
 }
 
+.cont-marca-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cont-header-marca {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include maxw1200 () {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -30,9 +40,6 @@ body {
     &--lu {
       color: rgb(202, 202, 202);
     }
-    @include maxw600 () {
-      margin-top: 20px;
-    }
   }
   &__tel {
     color: hsl(300, 40%, 58%);
@@ -42,19 +49,26 @@ body {
     align-items: center;
     gap: 2px;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
     padding: .3em .5em .5em .5em;
     border: 1px solid rgba(0, 0, 0, 0.253);
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    @include maxw800 () {
-      font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+    @include maxw1200 () {
+      display: none;
     }
-    @include maxw600 () {
-      top: 5px;
-      font-size: 0.9rem;
-      right: 5px;
+    &--mobile {
+      @extend .header__tel;
+      @include maxw1200 () {
+        display: block;
+        position: unset;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+      }
+      @include maxw600 () {
+        font-size: 0.85rem;
+      }
     }
   }
 }
@@ -73,7 +87,6 @@ body {
   @include maxw600 () {
     height: 50px;
     width: 50px;
-    margin-top: 20px;
   }
   @include maxw450 () {
     height: 40px;
@@ -229,8 +242,11 @@ body {
 footer {
   background-color: #eee5f5;
   height: 150px;
-  @include maxw768 () {
-    height: 130px
+  @include maxw550 () {
+    height: 140px;
+  }
+  @include maxw450 () {
+    height: 130px;
   }
 }
 
@@ -243,8 +259,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include maxw600 () {
-    margin-bottom: 20px;
+  @include maxw800 () {
+    flex-direction: column;
   }
 }
 
@@ -261,9 +277,27 @@ footer {
     bottom: 10px;
     left: 20px;
     @include maxw800 () {
-      font-size: 1rem;
+      display: none;
     }
-    @include maxw600 () {
-      left: 10px;
+    &--mobile {
+      @extend .footer__tel;
+      bottom: 0;
+      left: 0;
+      position: unset;
+      z-index: 0;
+      @include w800 () {
+        display: none;
+      }
+      @include maxw800 () {
+        display: block;
+        margin: 10px 0;
+      }
+      @include maxw600 () {
+        display: block;
+        margin: 10px 0 0 0;
+      }
+      @include maxw450 () {
+        font-size: 1rem;
+      }
     }
 }

@@ -47,10 +47,22 @@ body {
   background-size: 100% 1.5em;
 }
 
+.cont-marca-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cont-header-marca {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1200px) {
+  .cont-header-marca {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .header__marca {
@@ -67,12 +79,7 @@ body {
 .header__marca--lu {
   color: rgb(202, 202, 202);
 }
-@media (max-width: 600px) {
-  .header__marca {
-    margin-top: 20px;
-  }
-}
-.header__tel {
+.header__tel, .header__tel--mobile {
   color: hsl(300, 40%, 58%);
   font-family: "Rampart One", cursive;
   font-size: 1.3rem;
@@ -80,23 +87,29 @@ body {
   align-items: center;
   gap: 2px;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
   padding: 0.3em 0.5em 0.5em 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.253);
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
 }
-@media (max-width: 800px) {
-  .header__tel {
-    font-size: 1rem;
+@media (max-width: 1200px) {
+  .header__tel, .header__tel--mobile {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header__tel--mobile {
+    display: block;
+    position: unset;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 600px) {
-  .header__tel {
-    top: 5px;
-    font-size: 0.9rem;
-    right: 5px;
+  .header__tel--mobile {
+    font-size: 0.85rem;
   }
 }
 
@@ -120,7 +133,6 @@ body {
   .lolipop {
     height: 50px;
     width: 50px;
-    margin-top: 20px;
   }
 }
 @media (max-width: 450px) {
@@ -309,7 +321,12 @@ footer {
   background-color: #eee5f5;
   height: 150px;
 }
-@media (max-width: 768px) {
+@media (max-width: 550px) {
+  footer {
+    height: 140px;
+  }
+}
+@media (max-width: 450px) {
   footer {
     height: 130px;
   }
@@ -325,13 +342,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cont-logo-footer {
-    margin-bottom: 20px;
+    flex-direction: column;
   }
 }
 
-.footer__tel {
+.footer__tel, .footer__tel--mobile {
   color: hsl(180, 47%, 46%);
   font-family: "Rampart One", cursive;
   font-size: 1.2rem;
@@ -345,13 +362,36 @@ footer {
   left: 20px;
 }
 @media (max-width: 800px) {
-  .footer__tel {
-    font-size: 1rem;
+  .footer__tel, .footer__tel--mobile {
+    display: none;
+  }
+}
+.footer__tel--mobile {
+  bottom: 0;
+  left: 0;
+  position: unset;
+  z-index: 0;
+}
+@media (min-width: 800px) {
+  .footer__tel--mobile {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .footer__tel--mobile {
+    display: block;
+    margin: 10px 0;
   }
 }
 @media (max-width: 600px) {
-  .footer__tel {
-    left: 10px;
+  .footer__tel--mobile {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 450px) {
+  .footer__tel--mobile {
+    font-size: 1rem;
   }
 }
 

@@ -30,6 +30,12 @@ $tipo-texto: 'Plus Jakarta Sans', sans-serif;
   }
 }
 
+@mixin w800 {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
 @mixin w1320 {
   @media (min-width: 1320px) {
     @content;
@@ -70,6 +76,12 @@ $tipo-texto: 'Plus Jakarta Sans', sans-serif;
 
 @mixin maxw600 {
   @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin maxw550 {
+  @media (max-width: 550px) {
     @content;
   }
 }
