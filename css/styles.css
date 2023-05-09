@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .btn-wsp {
@@ -69,6 +70,11 @@ body {
   font-family: "Sigmar", cursive;
   text-shadow: #bb90a5 2px 2px 2px;
   margin: 0;
+}
+@media (max-width: 1200px) {
+  .header__marca {
+    font-size: 5rem;
+  }
 }
 .header__marca--li {
   color: #78cece;
@@ -320,14 +326,9 @@ footer {
   background-color: #eee5f5;
   height: 150px;
 }
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   footer {
-    height: 140px;
-  }
-}
-@media (max-width: 450px) {
-  footer {
-    height: 130px;
+    height: 175px;
   }
 }
 

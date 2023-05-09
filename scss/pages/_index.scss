@@ -31,6 +31,9 @@ body {
     font-family: $tipo-marca;
     text-shadow: #bb90a5 2px 2px 2px;
     margin: 0;
+    @include maxw1200 () {
+      font-size: 5rem;
+    }
     &--li {
       color: #78cece;
     }
@@ -241,11 +244,8 @@ body {
 footer {
   background-color: #eee5f5;
   height: 150px;
-  @include maxw550 () {
-    height: 140px;
-  }
-  @include maxw450 () {
-    height: 130px;
+  @include maxw800 () {
+    height: 175px;
   }
 }
 
