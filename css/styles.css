@@ -119,8 +119,7 @@ body {
 }
 @media (max-width: 1200px) {
   .lolipop {
-    height: 70px;
-    width: 70px;
+    display: none;
   }
 }
 @media (max-width: 992px) {
