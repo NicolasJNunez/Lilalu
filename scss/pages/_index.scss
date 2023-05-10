@@ -110,6 +110,9 @@ body {
   }
   &__parrafo {
     text-align: justify;
+    @include w800 () {
+      font-size: 1.3rem;
+    }
   }
   & > h2 {
     color: #9e9e9e;
@@ -163,6 +166,15 @@ body {
     @include w754 () {
       font-size: 1rem;
     }
+  }
+}
+
+.bienvenidos {
+  @include w800 () {
+    font-size: 1.55rem;
+  }
+  @include maxw800 () {
+    font-size: 1.1rem;
   }
 }
 
